@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showMenu = false
+    @State var count = 0
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        GeometryReader { geometry in
+            MainView(showMenu: self.$showMenu, count: self.$count)
+                .frame(width: geometry.size.width, height: geometry.size.height)
+                .offset(x: self.showMenu ? geometry.size.width : 0)
+            if self.showMenu {
+                MenuView(showMenu: self.$showMenu, count: self.$count)
+                    .frame(width: geometry.size.width)
+            }
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Content_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }

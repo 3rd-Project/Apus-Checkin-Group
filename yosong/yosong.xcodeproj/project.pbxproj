@@ -14,6 +14,8 @@
 		70DC335E28126AA800E07DB9 /* yosongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC335D28126AA800E07DB9 /* yosongTests.swift */; };
 		70DC336828126AA800E07DB9 /* yosongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC336728126AA800E07DB9 /* yosongUITests.swift */; };
 		70DC336A28126AA800E07DB9 /* yosongUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC336928126AA800E07DB9 /* yosongUITestsLaunchTests.swift */; };
+		70DC337728126B3D00E07DB9 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC337628126B3D00E07DB9 /* MenuView.swift */; };
+		70DC337928126C2800E07DB9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC337828126C2800E07DB9 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		70DC336328126AA800E07DB9 /* yosongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yosongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DC336728126AA800E07DB9 /* yosongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yosongUITests.swift; sourceTree = "<group>"; };
 		70DC336928126AA800E07DB9 /* yosongUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yosongUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		70DC337628126B3D00E07DB9 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		70DC337828126C2800E07DB9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				70DC334C28126AA600E07DB9 /* yosongApp.swift */,
+				70DC337828126C2800E07DB9 /* MainView.swift */,
 				70DC334E28126AA600E07DB9 /* ContentView.swift */,
+				70DC337628126B3D00E07DB9 /* MenuView.swift */,
 				70DC335028126AA700E07DB9 /* Assets.xcassets */,
 				70DC335228126AA700E07DB9 /* Preview Content */,
 			);
@@ -258,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				70DC334F28126AA600E07DB9 /* ContentView.swift in Sources */,
+				70DC337928126C2800E07DB9 /* MainView.swift in Sources */,
+				70DC337728126B3D00E07DB9 /* MenuView.swift in Sources */,
 				70DC334D28126AA600E07DB9 /* yosongApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
