@@ -8,17 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var showMenu = false
-    @State var count = 0
     var body: some View {
-        GeometryReader { geometry in
-            MainView(showMenu: self.$showMenu, count: self.$count)
-                .frame(width: geometry.size.width, height: geometry.size.height)
-                .offset(x: self.showMenu ? geometry.size.width : 0)
-            if self.showMenu {
-                MenuView(showMenu: self.$showMenu, count: self.$count)
-                    .frame(width: geometry.size.width)
-            }
+        NavigationView {
+            Text("캘린더 페이지")
+                .navigationBarItems(
+                    leading: NavigationLink(destination: MenuView()) {
+                        Image(systemName: "line.3.horizontal")
+                    }
+                )
         }
     }
 }

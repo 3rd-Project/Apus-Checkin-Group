@@ -16,10 +16,8 @@ struct MenuView: View {
     @State var testList = [test(icon: "person", text: "Profile"),
                            test(icon: "envelope", text: "Message"),
                            test(icon: "gear", text: "Settings")]
-    @Binding var showMenu: Bool
-    @Binding var count: Int
+
     var body: some View {
-        NavigationView {
             ZStack {
                 List {
                     ForEach(testList, id: \.id) { test in
@@ -63,12 +61,9 @@ struct MenuView: View {
             .navigationBarTitle("그룹 설정", displayMode: .inline)
             .navigationBarItems(leading: Button(action: {
                 withAnimation {
-                    self.showMenu = false
-                    self.count += 1
                 }
             }) {
                 Text("닫기")
             }, trailing: EditButton())
-        }
     }
 }
